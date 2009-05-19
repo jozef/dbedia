@@ -83,6 +83,18 @@ sub get {
     );
 }
 
+
+=head2 clear_cache
+
+Clears the cache.
+
+=cut
+
+sub clear_cache {
+    my $self = shift;
+    return $self->_cache->clear;
+}
+
 1;
 
 

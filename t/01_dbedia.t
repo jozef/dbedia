@@ -21,7 +21,7 @@ sub main {
     my $dbedia = dbedia->new( base_uri => 'file://'.$Bin.'/dbedia/' );
     isa_ok($dbedia, 'dbedia');
     
-    $dbedia->_cache->clear;
+    $dbedia->clear_cache;
 
     my $brands_models = $dbedia->get('brandsModels.json');
     is(ref $brands_models, 'HASH', 'brandsModels.json has HASH');
