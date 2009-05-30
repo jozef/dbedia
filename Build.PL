@@ -9,13 +9,16 @@ my $builder = Module::Build->new(
     dist_author         => 'Jozef Kutej <jkutej@cpan.org>',
     dist_version_from   => 'lib/dbedia.pm',
     requires => {
-        'File::Spec' => 0,
         'Class::Accessor::Fast' => 0,
+        'App::Cache' => 0,
+        'Carp'       => 0,
+        'JSON::XS'   => 0,
     },
     build_requires => {
         'Test::More'      => 0,
         'Test::Exception' => 0,
         'LWP::Simple'     => 0,
+        'File::Spec'      => 0,
     },
     add_to_cleanup      => [ 'dbedia-*' ],
     create_readme       => 1,

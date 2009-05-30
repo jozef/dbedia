@@ -5,7 +5,6 @@ use warnings;
 
 #use Test::More 'no_plan';
 use Test::More tests => 8;
-use Test::Differences;
 use Test::Exception;
 use LWP::Simple 'get';
 
