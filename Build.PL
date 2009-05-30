@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More'      => 0,
         'Test::Exception' => 0,
+        'LWP::Simple'     => 0,
     },
     add_to_cleanup      => [ 'dbedia-*' ],
     create_readme       => 1,

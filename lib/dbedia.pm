@@ -77,9 +77,16 @@ sub get {
     croak 'pass path as function argument'
         if not $path;
     
+    my $data = $self->_cache->get_url($self->base_uri.$path);
+    
+    my $suffix = '';
+    $suffix = $1
+        if $path =~ m/\.([^.]+)$/;
+    
     state $json = JSON::XS->new->utf8;
-    return $json->decode(
-        $self->_cache->get_url($self->base_uri.$path)
+    return (
+        $suffix eq 'json' ? $json->decode($data)
+        : $data
     );
 }
 

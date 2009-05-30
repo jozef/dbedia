@@ -30,6 +30,7 @@
 
 ^html/
 ^debian/
+^etc/
 
 ^tmp/
 .*\.tar\.gz
