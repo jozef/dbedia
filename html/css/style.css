@@ -1,0 +1,36 @@
+* {
+	border:0;
+	margin:0;
+	padding:0;
+}
+
+/* body */
+body {
+	background:#fff;
+	color:#666;
+	font:0.9em Verdana, 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	line-height:1.4em;
+}
+
+cite {
+	border: 1px #ccc dotted;
+	border-left: 0;
+	border-right: 0;
+	display:block;
+	margin: 3px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+/* make IE scale images the "pretty" way */
+img { -ms-interpolation-mode:bicubic; }
+
+.content {
+	padding: 7px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}

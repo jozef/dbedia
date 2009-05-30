@@ -17,7 +17,6 @@ my $builder = Module::Build->new(
         'Test::Exception' => 0,
     },
     add_to_cleanup      => [ 'dbedia-*' ],
-    create_makefile_pl => 'traditional',
     create_readme       => 1,
     sign                => 1,
 );

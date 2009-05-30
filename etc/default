@@ -1,0 +1,6 @@
+    location / {
+        root   /var/www/dbedia;
+        index  index.html index.htm;
+        expires 12h;
+        autoindex  on;
+    }

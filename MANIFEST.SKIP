@@ -28,5 +28,8 @@
 \#$
 \b\.#
 
+^html/
+^debian/
+
 ^tmp/
 .*\.tar\.gz
