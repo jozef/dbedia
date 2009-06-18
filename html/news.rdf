@@ -9,14 +9,30 @@
     <items>
       <rdf:Seq>
         <rdf:li rdf:resource="http://dbedia.com/"/>
+        <rdf:li rdf:resource="http://dbedia.com/WURFL/"/>
+        <rdf:li rdf:resource="http://dbedia.com/Debian/"/>
       </rdf:Seq>
     </items>
   </channel>
-  <item rdf:about="http://dbedia.com">
+  <item rdf:about="http://dbedia.com/">
     <title>dbedia.com</title>
     <link>http://dbedia.com/</link>
     <description>The future will start tomorrow not today.</description>
     <dc:creator>meon</dc:creator>
     <dc:date>2009-05-19T22:42:23+02:00</dc:date>
+  </item>
+  <item rdf:about="http://dbedia.com/WURFL/">
+    <title>dbedia-WURFL</title>
+    <link>http://dbedia.com/WURFL/</link>
+    <description>WURFL data processed</description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2009-06-18T16:40:23+02:00</dc:date>
+  </item>
+  <item rdf:about="http://dbedia.com/Debian/">
+    <title>dbedia-Debian</title>
+    <link>http://dbedia.com/Debian/</link>
+    <description>Debian .dsc information</description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2009-06-18T16:40:23+02:00</dc:date>
   </item>
 </rdf:RDF>

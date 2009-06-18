@@ -14,6 +14,11 @@ install: all
 	mkdir -p ${DESTDIR}/etc/dbedia/sites-available
 	cp etc/default ${DESTDIR}/etc/dbedia/sites-available/
 
+# create debian package
+.PHONY: deb
+deb:
+	debuild -b -us -uc --lintian-opts --no-lintian
+
 # CLEAN
 .PHONY: clean distclean
 clean:
