@@ -26,7 +26,7 @@ use base 'Class::Accessor::Fast';
 use App::Cache;
 use Carp;
 use JSON::XS;
-
+use IO::Uncompress::Gunzip 'gunzip', '$GunzipError';
 
 =head1 PROPERTIES
 
@@ -82,6 +82,17 @@ sub get {
     my $suffix = '';
     $suffix = $1
         if $path =~ m/\.([^.]+)$/;
+    
+    # decompress gzip-ed content
+    if ($suffix eq 'gz') {
+        my $gzdata = $data;
+        gunzip \$gzdata => \$data or die "gunzip failed: $GunzipError\n";
+
+        $path = substr($path, 0, -3);
+        $suffix = '';
+        $suffix = $1
+            if $path =~ m/\.([^.]+)$/;
+    }
     
     state $json = JSON::XS->new->utf8;
     return (
