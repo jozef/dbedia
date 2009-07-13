@@ -11,6 +11,8 @@ dbedia - interface to dbedia.com
 
 =head1 DESCRIPTION
 
+This is an experiment.
+
 =cut
 
 use warnings;

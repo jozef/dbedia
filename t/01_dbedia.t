@@ -23,8 +23,8 @@ sub main {
     
     $dbedia->clear_cache;
 
-    my $brands_models = $dbedia->get('brandsModels.json');
-    is(ref $brands_models, 'HASH', 'brandsModels.json has HASH');
+    my $brands_models = $dbedia->get('brandsModels.json.gz');
+    is(ref $brands_models, 'HASH', 'brandsModels.json.gz has HASH');
     ok(keys %{$brands_models}, 'with some brands');
     ok(scalar @{$brands_models->{'Apple'}}, 'with some models');
 

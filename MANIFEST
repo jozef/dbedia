@@ -6,7 +6,7 @@ META.yml
 README
 t/00_compile.t
 t/01_dbedia.t
-t/dbedia/brandsModels.json
+t/dbedia/brandsModels.json.gz
 t/dbedia/info.txt
 t/distribution.t
 t/fixme.t

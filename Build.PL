@@ -13,6 +13,8 @@ my $builder = Module::Build->new(
         'App::Cache' => 0,
         'Carp'       => 0,
         'JSON::XS'   => 0,
+        'IO::Uncompress::Gunzip'
+                     => 0,
     },
     build_requires => {
         'Test::More'      => 0,

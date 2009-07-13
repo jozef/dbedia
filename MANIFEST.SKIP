@@ -19,6 +19,7 @@
 \bBuild$
 \b_build
 \bcover_db
+^dbedia-0.01/
 
 # Avoid temp and backup files.
 ~$
@@ -28,9 +29,16 @@
 \#$
 \b\.#
 
+# avaid debian stuff
+^build-stamp$
+^configure-stamp$
+
 ^html/
 ^debian/
 ^etc/
 
 ^tmp/
 .*\.tar\.gz
+
+# skip page
+^html/
